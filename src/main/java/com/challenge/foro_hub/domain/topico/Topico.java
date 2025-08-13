@@ -43,8 +43,6 @@ public class Topico {
     private List<Respuesta> respuestas = new ArrayList<>();
 
 
-
-
     public void cerrar(Status status){
         this.status = Status.STATUS_CERRADO;
     }

@@ -10,6 +10,7 @@ import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
+import java.time.LocalDateTime;
 import java.util.List;
 
 @Entity
@@ -40,4 +41,10 @@ public class Usuario {
 
     @OneToMany(mappedBy = "usuario", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<Respuesta> respuestas;
+
+    @Column(name = "fecha_registro", nullable = false)
+    private LocalDateTime fechaRegistro;
+
+
+    private boolean activo;
 }

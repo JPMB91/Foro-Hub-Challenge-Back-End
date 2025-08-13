@@ -20,7 +20,6 @@ public class Respuesta {
     private Long id;
     private String mensaje;
 
-    @Setter
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "topico_id")
     private Topico topico;
@@ -31,7 +30,7 @@ public class Respuesta {
     @JoinColumn(name = "usuario_id")
     private Usuario usuario;
 
-    private String solucion;
+    private boolean solucion;
 
     public void setTopico(Topico topico) {
         this.topico = topico;
