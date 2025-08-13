@@ -4,7 +4,7 @@ import jakarta.validation.constraints.*;
 
 public record DatosCreacionUsuario(
         @NotBlank(message = "El nombre no puede quedar en blanco")
-        @Size(min = 3, max = 25, message = "El nombre debe tener entre 3 y 25 caracteres")
+        @Size(min = 3, max = 45, message = "El nombre debe tener entre 3 y 25 caracteres")
         String nombre,
 
         @NotBlank(message = "El email no puede quedar en blanco")
