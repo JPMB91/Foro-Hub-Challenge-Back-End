@@ -5,9 +5,8 @@ import java.time.LocalDateTime;
 public record DatosListadoTopico(
         Long id,
         String titulo,
-
         String mensaje,
-        String usuario,
+        String autor,
         LocalDateTime fechaCreacion,
         Status status,
         Integer numeroRespuestas
