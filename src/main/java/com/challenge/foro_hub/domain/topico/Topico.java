@@ -42,6 +42,17 @@ public class Topico {
     @OneToMany(mappedBy = "topico", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<Respuesta> respuestas = new ArrayList<>();
 
+    public Topico(DatosCreacionTopico datos, Usuario usuario) {
+
+        this.id = null;
+        this.titulo = datos.titulo();
+        this.mensaje = datos.mensaje();
+        this.fechaCreacion = LocalDateTime.now();
+        this.status = Status.STATUS_ACTIVO;
+        this.usuario = usuario;
+        this.curso = datos.curso();
+    }
+
 
     public void cerrar(Status status){
         this.status = Status.STATUS_CERRADO;
