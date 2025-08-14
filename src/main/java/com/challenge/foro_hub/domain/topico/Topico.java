@@ -67,5 +67,11 @@ public class Topico {
         respuesta.setTopico(this);
     }
 
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
+    }
 
+    public void setMensaje(String mensaje) {
+        this.mensaje = mensaje;
+    }
 }
