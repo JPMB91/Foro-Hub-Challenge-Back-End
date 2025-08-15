@@ -18,4 +18,5 @@ public class ErrorHandler {
     public ResponseEntity<?> handleTopicoNotFound(EntityNotFoundException ex){
         return ResponseEntity.status(HttpStatus.NOT_FOUND).body(ex.getMessage());
     }
+
 }
