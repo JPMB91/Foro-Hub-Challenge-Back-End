@@ -16,6 +16,7 @@
 
 - [Postman]((https://www.postman.com/downloads/)) o [Insomnia](https://insomnia.rest/download) para acceder a las rutas
 - [Intellij](https://www.jetbrains.com/idea/download/) para levantar el servidor
+- [MySQL 8.0 - Workbench](https://dev.mysql.com/downloads/workbench/) como motor de base de datos
 
 
 
